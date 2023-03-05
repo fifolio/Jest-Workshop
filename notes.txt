@@ -14,7 +14,10 @@ TDD => "Test Driven Development"
 -- 
 Methods:
 
-[1] a Jest method for containing one or more related tests. Every time you start writing a new suite of tests for a functionality wrap it in a describe block. and You can nest Describe() in another Describe()
+[1] Describe()
+a Jest method for containing one or more related tests. Every time you start writing a new suite of tests for a functionality wrap it in a describe block. and You can nest Describe() in another Describe()
 -----[-] Describe(name, func);
 
-[2]
+[2] Only()
+using 'Only' when you just need to Test one or couple of probabilities and skip the other tests
+-----[-] it.only() / test.only();

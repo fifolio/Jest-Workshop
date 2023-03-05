@@ -5,7 +5,7 @@ describe("Validate the input field", () => {
     expect(theFilter()).toBe("unknown");
   });
 
-  it("Check for spaces", () => {
+  it.only("Check for spaces", () => {
     expect(theFilter("  Osama")).toBe("Osama");
   });
 
