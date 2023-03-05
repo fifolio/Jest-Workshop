@@ -96,3 +96,25 @@ expect.extend({
 test("Check if number is larger than other number", () => {
   expect(2).toBeLargerThan(1);
 });
+
+expect.extend({
+  toBeBetween(received, start, end) {
+    const pass = received > start && received < end;
+    if (pass) {
+      return {
+        message: () => `Expected ${received} Is Between ${start} and ${end}`,
+        pass: true,
+      };
+    } else {
+      return {
+        message: () =>
+          `Error: Expected ${received} Must Be Between ${start} and ${end}`,
+        pass: false,
+      };
+    }
+  },
+});
+
+test("Check if Year is Between years range", () => {
+  expect(1982).toBeBetween(1980, 1990);
+});
