@@ -10,3 +10,11 @@ TDD => "Test Driven Development"
 [1] Think about what your code will do
 [2] Write the code
 [3] Test the code
+
+-- 
+Methods:
+
+[1] a Jest method for containing one or more related tests. Every time you start writing a new suite of tests for a functionality wrap it in a describe block. and You can nest Describe() in another Describe()
+-----[-] Describe(name, func);
+
+[2]

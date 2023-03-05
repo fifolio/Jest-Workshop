@@ -1,5 +1,7 @@
 let theSum = require("../sum");
 
-it("Testing theSum()", () => {
-  expect(theSum(1, 49, 50)).toBe(100);
+describe("Check the numbers sum Total", () => {
+  it("Testing theSum()", () => {
+    expect(theSum(1, 49, 50)).toBe(100);
+  });
 });
