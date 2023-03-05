@@ -37,7 +37,7 @@ used to preform a task/s before all the test completed
 
 [6] .Not. / .toHaveLength() / .toContain()
 
-[7] toBeTruthy() / toBeGreaterThan() / toBeGreaterThanOrEqual() / toBeLessThan() / toBeLessThanOrEqual()
+[7] toBeTruthy() / toBeGreaterThan() / toBeGreaterThanOrEqual() / toBeLessThan() / toBeLessThanOrEqual() / toBeUndefined() / toMatch() / toHaveProperty()
 
 [8]
 

@@ -48,3 +48,29 @@ test("Check if array First Element is Less than 5", () => {
 test("Check if array First Element is Less than or Equal 2", () => {
   expect(allData[1]).toBeLessThanOrEqual(2);
 });
+
+test("Check For Undefined", () => {
+  let a;
+  expect(a).toBeUndefined();
+});
+
+test("Check For Substring inside String by RegExp", () => {
+  let myString = "I Love My Family";
+  expect(myString).toMatch(/Family/);
+});
+
+test("Check For Property age", () => {
+  let myObj = {
+    name: "Fitas",
+    age: 54,
+  };
+  expect(myObj).toHaveProperty("age");
+});
+
+test("Check For Property age value is 54", () => {
+  let myObj = {
+    name: "Fitas",
+    age: 54,
+  };
+  expect(myObj).toHaveProperty("age", 54);
+});
