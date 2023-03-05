@@ -15,6 +15,13 @@
     "collectCoverage": true,
     "coverageReports": [
       "html"
+    ],
+    "coverageDirectory": "reports",
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts}"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
     ]
   }
 }
