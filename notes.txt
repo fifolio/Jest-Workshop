@@ -34,3 +34,5 @@ both of them are used to preform a task/s before 1 test or all tests
 [5] afterAll()
 used to preform a task/s before all the test completed
 -----[-] afterAll(() => {})
+
+[6] .Not. / .toHaveLength() / .toContain()
