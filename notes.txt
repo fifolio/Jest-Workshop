@@ -39,5 +39,21 @@ used to preform a task/s before all the test completed
 
 [7] toBeTruthy() / toBeGreaterThan() / toBeGreaterThanOrEqual() / toBeLessThan() / toBeLessThanOrEqual() / toBeUndefined() / toMatch() / toHaveProperty()
 
-[8]
-
+[8] Create Your own Matchers:
+expect.extend({
+  matcherName (received, target) {
+    const pass = received <condition> target;
+    if (pass) {
+      return {
+        message: () => ``,
+        pass: true,
+      };
+    } else {
+      return {
+        message: () =>
+          `Error: `,
+        pass: false,
+      };
+    }
+  },
+});
