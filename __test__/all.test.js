@@ -25,3 +25,26 @@ test("Check if array NOT Contains number 0", () => {
     expect(allData[i]).not.toBe(10);
   }
 });
+
+// skipped
+test.skip("Check if array Contains ONLY numbers", () => {
+  for (let i = 0; i < allData.length; i++) {
+    expect(isNaN(allData[i])).not.toBeTruthy();
+  }
+});
+
+test("Check if array First Element is Larger than 1", () => {
+  expect(allData[3]).toBeGreaterThan(1);
+});
+
+test("Check if array First Element is Larger than or Equal 1", () => {
+  expect(allData[1]).toBeGreaterThanOrEqual(1);
+});
+
+test("Check if array First Element is Less than 5", () => {
+  expect(allData[1]).toBeLessThan(5);
+});
+
+test("Check if array First Element is Less than or Equal 2", () => {
+  expect(allData[1]).toBeLessThanOrEqual(2);
+});

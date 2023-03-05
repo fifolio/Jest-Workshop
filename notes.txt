@@ -36,3 +36,8 @@ used to preform a task/s before all the test completed
 -----[-] afterAll(() => {})
 
 [6] .Not. / .toHaveLength() / .toContain()
+
+[7] toBeTruthy() / toBeGreaterThan() / toBeGreaterThanOrEqual() / toBeLessThan() / toBeLessThanOrEqual()
+
+[8]
+
