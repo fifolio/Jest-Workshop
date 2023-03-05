@@ -25,3 +25,12 @@ using 'Only' when you just need to Test one or couple of probabilities and skip 
 [3] skip()
 using 'skip' when you just need to Skip one or couple of probabilities and run the other tests
 -----[-] it.skip() / test.skip();
+
+[4] beforeAll(), beforeEach()
+both of them are used to preform a task/s before 1 test or all tests
+-----[-] beforeAll(() => {})
+-----[-] beforeEach(() => {})
+
+[5] afterAll()
+used to preform a task/s before all the test completed
+-----[-] afterAll(() => {})
