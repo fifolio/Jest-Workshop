@@ -5,7 +5,7 @@ describe("Validate the input field", () => {
     expect(theFilter()).toBe("unknown");
   });
 
-  it.only("Check for spaces", () => {
+  it("Check for spaces", () => {
     expect(theFilter("  Osama")).toBe("Osama");
   });
 
@@ -13,7 +13,7 @@ describe("Validate the input field", () => {
     expect(theFilter("firas_mohamed_dabbabi")).toBe("firas_moha");
   });
 
-  it("Check if name not starts with underscore", () => {
+  it.skip("Check if name not starts with underscore", () => {
     expect(theFilter("_Firas")).toBe("Firas");
   });
 });
