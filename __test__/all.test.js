@@ -115,6 +115,24 @@ expect.extend({
   },
 });
 
-test("Check if Year is Between years range", () => {
+test("Check if Year is Between years rang", () => {
   expect(1982).toBeBetween(1980, 1990);
+});
+
+test("Expect Anything", () => {
+  let x = "A";
+  expect("firas").toEqual(expect.anything());
+  expect(x).toEqual(expect.anything());
+  expect(1).toEqual(expect.anything());
+  expect([1, 2, 3, 4]).toEqual(expect.anything());
+});
+
+test("Expect Any Constructor", () => {
+  let x = "A";
+  expect(x).toEqual(expect.any(String));
+});
+
+test("Expect Any to be found in the main array", () => {
+  let myarr = [1, 2, 3, 4];
+  expect(myarr).toEqual(expect.arrayContaining([4, 2]));
 });

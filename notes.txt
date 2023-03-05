@@ -57,3 +57,6 @@ expect.extend({
     }
   },
 })
+
+[9] expect.anything(), to expect anything but NOT undefined NOR null
+[10] expect.any, to expect any constructor 
